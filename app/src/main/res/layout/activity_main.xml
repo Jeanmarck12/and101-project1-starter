@@ -21,14 +21,16 @@
 
             <ImageView
                 android:id="@+id/profile_image"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/profile_image_size"
-                android:layout_marginTop="72dp"
-                android:src="@drawable/avatar_9"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:contentDescription="Profile avatar"
+                app:srcCompat="@drawable/avatar_9"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="32dp"/>
+
 
             <TextView
                 android:id="@+id/profile_name"
